@@ -49,7 +49,7 @@ mypot.PotSendMsg(msg)
 while(1):
     time.sleep(wait_time)
     my_ptt_crawler.Crawl(board_name, keyword)
-    print("爬文中: " + time.ctime(time.time()))
+    print(keyword + "@" + board_name + " 偵測中... " + time.ctime(time.time()))
 
     new_items: PttItem
     for new_items in my_ptt_crawler.new_content_list:
